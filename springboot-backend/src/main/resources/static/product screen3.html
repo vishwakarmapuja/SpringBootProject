@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Product Screen3</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.header {
+  overflow: hidden;
+  background-color:#203d7f;
+  padding: 20px 10px;
+}
+.header1 {
+  overflow: hidden;
+  background-color:#b6cdff;
+  padding: 10px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:black;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.innerdiv
+{
+margin:30px;
+margin-left:90px;
+margin-right:90px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+footer {
+  text-align:left;
+  padding: 3px;
+  background-color:#203d7f;
+  color: white;
+  
+}
+.img1 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  
+}
+.innerdiv
+{
+margin:30px;
+margin-left:90px;
+margin-right:90px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a2:after {
+    content: ' \003E';
+}
+</style>
+
+body{
+ background-color:#e9f1f3;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header"> 
+   <img src="/Assest/logo.jpg" width="150" height="50">
+   </div>
+   <div class="header1">
+ 	 <div class="header-left">
+   		 <a class="active" href="#home">Home</a>
+   		 <a href="#contact">Product</a>  
+  		<b><a href="#contact">Product Loan</a></b>  
+  	
+  	</div>
+  </div>
+  <br>
+  <div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+  <center>
+  <div class="header1 a2">
+ 		 <a class="active" href="#home">Basic Details &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a>
+   		 <a href="#contact">Eligibility Check  &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a>  
+  		<a href="#contact">Personal Details  &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a> 
+  		<a href="#contact">Employment Details  &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a>
+  		<a href="#contact">Documentation</a>
+  	
+  </div>
+  <br>
+  
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+    </div>
+ </div>
+ <div style="text-align:right;">	
+ 	<h5><font color="blue"><i class="fa fa-clock-o" style="font-size:24px"></i>60 seconds</font></h5>
+ </div>
+ </center>  
+  </div>
+  
+  <div class="col-sm-2"></div>
+  </div>  
+  
+
+<div class="row">
+<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+	<center>
+	<h1>Personal Details</h1>
+	</center>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+<div class="row">
+<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="border-top:1px solid #ccc;">	
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+
+<div class="row">
+<div class="col-sm-2"></div>
+
+	<div class="col-sm-4" style="padding:30px; padding-right:0px;">
+	
+		<div  class="innerdiv">
+	
+				<label>Enter Full Name<font color="red">*</font></label>
+			<div class="input-group">
+     			<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+			     		<input type="text" class="form-control" name="panno">
+			</div>
+		<br>
+			     	
+			<label>Date of Birth<font color="red">*</font></label>
+			<div class="input-group">
+     			<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+			     <input type="text" class="form-control" name="date">
+			  </div> 
+			
+		<br>	
+			<label>Educational Qulification<font color="red">*</font></label>
+			<div class="input-group">
+     			<span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
+			     	<select class="form-control"  name="type">
+			        <option>Select</option>
+			        <option>Mcs</option>
+			        <option>Bcs</option>
+			        <option>Enginer</option>
+			        <option>ITI</option>
+			      </select>
+			</div>
+			
+	</div>
+	
+	</div>
+	
+
+<div class="col-sm-4" style="padding:30px; padding-left:0px;">
+	
+		<div  class="innerdiv">
+	
+	     
+		<label>Gender<font color="red">*</font></label>
+			<div class="input-group">
+     			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+			     	<select class="form-control"  name="type">
+			        <option>Select</option>
+			        <option>Male</option>
+			        <option>Female</option>
+			        <option>Other</option>
+			      </select>
+			</div>	
+			<br>
+			<label>Number of Dependents<font color="red">*</font></label>
+			<div class="input-group">
+     			<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+			     	<select class="form-control"  name="type">
+			        <option>Select</option>
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			      </select>
+			</div>
+			<br>
+			<label>Email ID<font color="red">*</font></label>
+			<div class="input-group">
+     			<span class="input-group-addon"><i class="glyphicon glyphicon">@</i></span>
+			     		<input type="text" class="form-control" name="email">
+			</div>
+			
+		</div>
+	</div>
+			</div>	
+			 <center><button type="submit" class="btn btn-danger">Proceed</button></center><br>
+			
+
+<div class="col-sm-2"></div>
+
+
+ <footer>
+<br><br>
+<div class="row">
+	<div class="col-sm-1">
+ 	 <img src="/Assest/logo_mini.jpg" width="80" height="50"> 
+	</div>
+<div class="col-sm-3">
+		<div class="row"><i class="fa fa-phone"></i>&nbsp;&nbsp;+91 7517387239</div>
+			<div class="row">@&nbsp;&nbsp;info@finaleap.com</div>
+				<div class="row">Copyright ©2020 Finaleap. All Rights Reserved</div>
+</div>
+<div class="col-sm-5">
+</div>
+
+  <div class="col-sm-2">
+		<div class="row"> 
+		<div class="col-sm-6">
+		</div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-facebook"></i></div>
+		<div class="col-sm-2"style="font-size:30px;" ><i class="fa fa-twitter"></i></div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-linkedin"></i></div>
+		</div>
+	</div>
+
+</div>
+<br>
+</div>
+<br>
+</footer>
+	
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Login1 Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.header {
+  overflow: hidden;
+  background-color:#203d7f;
+  padding: 20px 10px;
+}
+.header1 {
+  overflow: hidden;
+  background-color:#b6cdff;
+  padding: 10px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:black;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.innerdiv
+{
+margin:30px;
+margin-left:90px;
+margin-right:90px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+footer {
+  text-align:left;
+  padding: 3px;
+  background-color:#203d7f;
+  color: white;
+  
+}
+label{
+text-align:right;
+}
+
+.img1 {
+  -webkit-filter: grayscale(100%);
+  filter:grayscale(100%);
+}
+
+body{
+ background-color:#e9f1f3;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  
+   <img src="file:///C:/Users/HP/Documents/Java%20Project/MyProject/Assest/logo.jpg" width="150" height="50">
+   </div>
+   <div class="header1">
+  <div class="header-left">
+    <a class="active" href="#home">Home</a>
+   <b> <a href="#contact">Product</a></b>
+  </div>
+  </div>
+</div>
+<div class="container">
+	<div class="row"">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6"><br>
+				<center><h4>OTP has been sent on the given mobile number!</h4></center> 
+				<center><h5>OTP is valid for &nbsp;<font color="blue">10 seconds<i class="fa fa-clock-o" style="font-size:24px"></i></font></h5></center> 
+			</div>
+			<div class="col-sm-3">
+			</div>
+    </div>
+    <div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6" >
+				<div  class="innerdiv">
+				 <div>
+					<div class="input-group">
+    		 			 <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+							<input type="text" class="form-control" placeholder="7517387239" name="mob"></i>
+					</div>
+				</div>
+				
+				<label>Edit Mobile Number</label>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<label>Resend OTP</label>
+					
+			   </div> 
+			</div>
+			<div class="col-sm-3">
+			</div>
+     </div>
+   
+    <div class="row">
+           <div class="col-sm-3">
+           </div>
+           <div class="col-sm-6" style="border-top:1px solid #ccc;">
+                 <div  class="innerdiv">
+                     <div>           
+   					 <div class="input-group">
+    				  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    			  		<input type="text" class="form-control" id="otp" name="otp" placeholder="4567">
+  			  		</div>
+                   </div>  
+               </div>
+           </div>
+           <div class="col-sm-3">
+           </div>
+    </div>
+   <div class="row">
+           <div class="col-sm-3">
+           </div>   
+           <div class="col-sm-6">
+            <div  class="innerdiv">
+               <h6><input type="checkbox" name="remember">"I accept Terms and Conditions and consent for any bureau(Equifax/CIBIL) verfication" Refer<font color="blue"> Terms and Conditions</font> </h6>
+              </div>
+          </div>
+           <div  class="col-sm-3">
+           </div>
+     </div>
+ 	
+	</div>
+	<br>
+	 <div class="row">
+	    <div class="col-sm-4"></div>
+ 	     <div class="col-sm-4">
+ 	   	  <center><button type="submit" class="btn btn-primary">Submit</button></center></div>  
+	   <div class="col-sm-4">
+	  </div> 
+	</div>
+
+	<br><br>
+<footer>
+<br><br>
+<div class="row">
+	<div class="col-sm-1">
+ 	 <img src="file:///C:/Users/HP/Documents/Java%20Project/MyProject/Assest/logo.jpg" width="100" height="50"> 
+	</div>
+<div class="col-sm-3">
+		<div class="row"><i class='fa fa-phone'></i>&nbsp;&nbsp;+91 7517387239</div>
+			<div class="row">@&nbsp;&nbsp;info@finaleap.com</div>
+				<div class="row">Copyright ©2020 Finaleap. All Rights Reserved</div>
+</div>
+<div class="col-sm-5">
+</div>
+
+  <div class="col-sm-2">
+		<div class="row"> 
+		<div class="col-sm-7">
+		</div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-facebook"></i></div>
+		<div class="col-sm-2"style="font-size:30px;" ><i class="fa fa-twitter"></i></div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-linkedin"></i></div>
+		</div>
+	</div>
+
+</div>
+<br>
+</div>
+<br>
+</footer>
+</div>	
+</body>
+</html>

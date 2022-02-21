@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Product Screen9</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+ #rcorners1 {
+  border-radius: 15px;
+}
+ 
+ #rcorners2 {
+  border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+ 
+ #rcorners3 {
+  border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+ 			     
+table, th, td{
+  border: 1px groove;
+    text-align: center;
+     
+}
+table {
+  border-radius: 1em;
+  overflow: hidden;
+   background-color:white;
+}
+.header {
+  overflow: hidden;
+  background-color:#203d7f;
+  padding: 20px 10px;
+}
+.header1 {
+  overflow: hidden;
+  background-color:#b6cdff;
+  padding: 10px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:black;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.innerdiv
+{
+margin:30px;
+margin-left:90px;
+margin-right:90px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+footer {
+  text-align:left;
+  padding: 3px;
+  background-color:#203d7f;
+  color: white;
+  
+}
+.img1 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  
+}
+.innerdiv
+{
+margin:30px;
+margin-left:120px;
+margin-right:120px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body{
+ background-color:#e9f1f3;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="header"> 
+   <img src="/Assest/logo.jpg" width="150" height="50">
+   </div>
+   <div class="header1">
+ 	 <div class="header-left">
+   		 <a class="active" href="#home">Home</a>
+   		 <a href="#contact">Product</a>  
+  		<b><a href="#contact">Product Loan</a></b>  
+  	
+  	</div>
+  </div>
+  <br>
+  
+  <div class="row">
+    	<div class="col-sm-2"></div>
+		  	<div class="col-sm-8">
+		  	<center>
+		  	<h1>Thank You!</h1><br>
+		  	<h4>Your Loan Eligibility Based On The Details Provided Is <font color="blue">Rs 3,00,000</font></h4><br>
+		  	<p>We are nearly finished.Please enter the required loan amount and tenure to <br>compare and select from multiple offers tailored for you.</p>
+		  </center>
+		  <div class="row">
+		  	<div class="col-sm-3"></div>
+		  <div class="col-sm-7">
+				<i class="fa fa-rupee"></i><label>Loan Amount</label><br>
+					<div class="row" >
+						<div class="col-sm-7" >
+						<div class="ridge" style="background-color:white; width:400px; height:60px;" id="rcorners2" >
+						<br>
+				<input type="range" list="tickmarks" style="width:280px; background-color:white;">
+				
+						<datalist id="tickmarks">
+						<option value="0" label="0%"></option>
+						<option value="10"></option>
+						<option value="20"></option>
+						<option value="30"></option>
+						<option value="40"></option>
+						<option value="50" label="50%"></option>
+						<option value="60"></option>
+						<option value="70"></option>
+						<option value="80"></option>
+						<option value="90"></option>
+						</datalist>
+						</div>
+						<span style="font-size:8px;">
+						50,000  &emsp;&emsp;&nbsp;
+						1,50,000  &emsp;&emsp;&nbsp;
+						2,50,000 &emsp;&emsp;
+						3,50,000  &emsp;&emsp;
+						4,50,000</span>
+						<span style="font-size:10px;">
+						 &emsp;&emsp;&ensp;
+						100,000  &ensp;
+						200,000 &ensp;
+						300,000  &emsp;&ensp;
+						<font color="blue">400,000 &ensp;</font>
+						 500,000</span>
+						</div>
+							<div class="col-sm-3">
+					
+								<p class="ridge" style="background-color:#b6cdff;  width:150px;height:60px;" id="rcorners3"><br>
+	 &emsp;&emsp;&ensp;
+				<font color="#7683a7"><span style="font-size:15px;"><u>300,000/-</u></span></font></p>	
+							</div>
+								<div class="col-sm-2"><br>&nbsp;&nbsp;
+						<i class="fa fa-pencil" ></i>
+						</div>
+		     	</div>
+		     <br>
+				
+				<i class="fa fa-link"></i> <label>Tenure</label>(months)<br>
+						<div class="row" id="">
+						<div class="col-sm-7">
+						<div class="ridge" style="background-color:white; width:400px; height:60px;" id="rcorners2">
+						<br>
+				<input type="range" list="tickmarks" style="width:280px; background-color:white;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+							<datalist id="tickmarks">
+						<option value="0" label="0%"></option>
+						<option value="10"></option>
+						<option value="20"></option>
+						<option value="30"></option>
+						<option value="40"></option>
+						<option value="50" label="50%"></option>
+						<option value="60"></option>
+						<option value="70"></option>
+						<option value="80"></option>
+						<option value="90"></option>
+						</datalist>
+						</div>
+						<span style="font-size:8px;">
+						6 &emsp;&emsp;&ensp;
+						18  &emsp;&emsp;
+						30  &emsp;&ensp;
+						42  &emsp;&emsp;
+						54</span>&ensp;
+						<span style="font-size:10px;">
+						12  &ensp;&nbsp;
+						<font color="blue">24 &emsp;
+						</font>
+						36  &emsp;&nbsp;
+						48 &emsp;&nbsp;
+						 60</span>
+						</div>
+							<div class="col-sm-3">
+					
+								<p class="ridge" style="background-color:#b6cdff;  width:150px;height:60px;" id="rcorners3"><br>
+				 &emsp;&emsp;&ensp;
+				<font color="#7683a7"><label><u>2 Years</u></label></font></p>
+						</div>
+						<div class="col-sm-2"><br>&nbsp;&nbsp;
+						<i class="fa fa-pencil" ></i>
+						</div>
+		     	</div>
+		    				  
+		  </div>
+		  </div><br><br><br>
+		  <center><button type="submit" class="btn btn-primary">Proceed</button><br>
+			<label>And choose among multiple bank offers</label>	
+		</div>
+		 <div class="col-sm-2"></div>
+		
+  </div>
+<br><br>
+<div class="row">
+    	<div class="col-sm-2"></div>
+		  	<div class="col-sm-8">
+		  	<div class="row">
+		  	<div class="col-sm-10">
+		  	
+		  	<h4>Here are the bank offers specially for you!</h4>
+		  	</div>  	&nbsp;&nbsp;&nbsp;&nbsp;  	&nbsp;&nbsp;&nbsp;&nbsp;  	&nbsp;&nbsp;&nbsp;&nbsp;
+		  	<div class="col-sm-1" id="rcorners1">
+		  	<div class="dropdown">
+			    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+			    <ul class="dropdown-menu">
+			      <li><a href="#">Bank</a></li>
+			      <li><a href="#">Loan Amount</a></li>
+			       <li><a href="#">Interest</a></li>
+			     	 <li><a href="#">Tenure</a></li>
+			     
+			      </ul>
+			  </div>
+			 </div>
+		</div>
+					
+	  	<br>
+		  	<table style="width:100%;">
+		  		  <tr  style="background-color:#b6cdff; height:60px;" >
+				    <th>Select</th>
+				    <th>Bank</th> 
+				    <th>Loan Amount</th>
+				    <th>Interest</th>
+				    <th>Processing Fee</th>
+				 	<th>Tenure</th>
+				 	<th>EMI</th>
+				 	<th>Foreclosure Charges</th>
+				  </tr>
+				  
+				   <tr style="height:50px;">
+				    <td><i class="fa fa-circle-o"></i></td>
+				    <td>HDFC Bank</td>
+				    <td><i class="fa fa-rupee"></i>3,00,000</td>
+				    <td>15%<br><span style="font-size:8px;">Floating</span></td>
+				    <td>3%</td>
+				    <td>24 months</td>
+				    <td><i class="fa fa-rupee"></i>14,546</td>
+				    <td>1%</td>
+				  </tr>
+				 
+				  <tr  style="height:50px;">
+				    <td><i class="fa fa-circle-o"></i></td>
+				    <td>ICICI Bank</td>
+				    <td><i class="fa fa-rupee"></i>3,00,000</td>
+				    <td>18%<br><span style="font-size:8px;">Fixed</span></td>
+				    <td>2.5%</td>
+				    <td>24 months</td>
+				    <td><i class="fa fa-rupee"></i>14,977</td>
+				    <td>1.5%</td>
+				  </tr>
+				  <tr  style="height:50px;">
+				    <td><i class="fa fa-circle-o"></i></td>
+				    <td>Kotak Bank</td>
+				    <td><i class="fa fa-rupee"></i>3,00,000</td>
+				    <td>13%<br><span style="font-size:8px;">Floating</span></td>
+				    <td>3.75%</td>
+				    <td>24 months</td>
+				    <td><i class="fa fa-rupee"></i>14,263</td>
+				    <td>2%</td>
+				  </tr>
+				 
+				  <tr  style="height:50px;">
+				    <td><i class="fa fa-circle-o"></i></td>
+				    <td>Axis Bank</td>
+				    <td><i class="fa fa-rupee"></i>3,00,000</td>
+				    <td>14%<br><span style="font-size:8px;">Floating</span></td>
+				    <td>2%</td>
+				    <td>24 months</td>
+				    <td><i class="fa fa-rupee"></i>14,404</td>
+				    <td>0%</td>
+				  </tr>
+				 
+				  <tr  style="height:50px;">
+				    <td><i class="fa fa-circle-o"></i></td>
+				    <td>Citi Bank</td>
+				    <td><i class="fa fa-rupee"></i>3,00,000</td>
+				    <td>16%<br><span style="font-size:8px;">Floating</span></td>
+				    <td>3.5%</td>
+				    <td>24 months</td>
+				    <td><i class="fa fa-rupee"></i>14,689</td>
+				    <td>1.5%</td>
+				  </tr>
+				 
+				  		  
+			  	</table>  	<br><br>
+			  	<center><button type="submit" class="btn btn-primary">Submit Application</button></center><br><br>
+		  </div>
+		  	
+		</div>	
+  <br>
+  
+ <footer>
+<br><br>
+<div class="row">
+	<div class="col-sm-1">
+ 	 <img src="/Assest/logo_mini.jpg" width="80" height="50"> 
+	</div>
+<div class="col-sm-3">
+		<div class="row"><i class="fa fa-phone"></i>&nbsp;&nbsp;+91 7517387239</div>
+			<div class="row">@&nbsp;&nbsp;info@finaleap.com</div>
+				<div class="row">Copyright ©2020 Finaleap. All Rights Reserved</div>
+</div>
+<div class="col-sm-5">
+</div>
+
+  <div class="col-sm-2">
+		<div class="row"> 
+		<div class="col-sm-6">
+		</div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-facebook"></i></div>
+		<div class="col-sm-2"style="font-size:30px;" ><i class="fa fa-twitter"></i></div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-linkedin"></i></div>
+		</div>
+	</div>
+
+</div>
+<br>
+</div>
+<br>
+</footer>
+	
+</body>
+</html>
+  

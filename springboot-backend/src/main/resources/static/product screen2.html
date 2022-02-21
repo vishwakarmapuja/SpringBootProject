@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Product Screen2</title>
+  <meta charset="utf-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https:/maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css/">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+  <script type="text/javascript" src="/js/calculation.js"></script>  
+ <script type="text/javascript" src="/js/get_product.js" ></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var tenure=$('#tenure_period').val();
+	  $("#tenure").html(tenure);
+	  var rate=$('#name').val(13)
+	  $('#click' ).click(function() {
+		$('#name').removeAttr('disabled');
+	  });
+  });
+</script>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.text-line {
+        background-color: transparent;
+        color: black;
+        outline: none;
+        outline-style: none;
+        outline-offset: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #eeeeee 1px;
+        padding: 3px 10px;
+    }
+
+.header {
+  overflow: hidden;
+  background-color:#203d7f;
+  padding: 20px 10px;
+}
+.header1 {
+  overflow: hidden;
+  background-color:#b6cdff;
+  padding: 10px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:black;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.innerdiv
+{
+margin:30px;
+margin-left:90px;
+margin-right:90px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+footer {
+  text-align:left;
+  padding: 3px;
+  background-color:#203d7f;
+  color: white;
+  
+}
+.img1 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  
+}
+.innerdiv
+{
+margin:30px;
+margin-left:120px;
+margin-right:120px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body{
+ background-color:#e9f1f3;
+}
+#rcorners1 {
+  border-radius: 15px;
+}
+ #rcorners2 {
+  border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+ 
+ #rcorners3 {
+  border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+
+
+p.solid {border-style: ridge;}
+
+ </style>
+</head>
+<body>
+
+
+<div class="header"> 
+   <img src="/Assest/logo.jpg" width="150" height="50">
+   </div>
+   <div class="header1">
+ 	 <div class="header-left">
+   		 <a class="active" href="#home">Home</a>
+   		 <a href="#contact">Product</a>  
+  		<b><a href="#contact">Product Loan</a></b>  
+  	
+  	</div>
+  </div>
+  <br>
+  
+  <div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+  <center>
+  <div class="header1 a2">
+ 		 <a class="active" href="#home">Basic Details &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a>
+   		 <a href="#contact">Eligibility Check  &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a>  
+  		<a href="#contact">Personal Details  &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a> 
+  		<a href="#contact">Employment Details  &nbsp; &nbsp; &nbsp;> &nbsp; &nbsp; &nbsp;</a>
+  		<a href="#contact">Documentation</a>
+  	
+  </div>
+  <br>
+  
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+    </div>
+ </div>
+ <div style="text-align:right;">	
+ 	<h5><font color="blue"><i class="fa fa-clock-o" style="font-size:24px"></i>40 seconds</font></h5>
+ </div>
+ </center>  
+  </div>
+  
+  <div class="col-sm-2"></div>
+  </div>  
+ <br><br>
+  
+ <div class="row" >
+    	<div class="col-sm-1"></div>
+			  <div class="col-sm-3" id="cal_loan" style="background-color:white; height:600px;" id="rcorners1">
+			  <center>
+			  <br><br>
+					<h4><font color="#626262">Loan Eligibility</font></h4>
+				<font color="blue"><span id="loan"></span> </font>
+					<br><br>
+					<span  style="font-size:15px;"><font color="#626262">Break up for your loan amount</font></span>	<br><br>			
+					<img src="/Assest/pie chart.png">
+					
+			</center>
+			<br><br><br>
+					<i class="fa fa-circle" style="font-size:15px;color:#e4a300 "></i>
+					<label><font color="#626262">Principle amount &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 
+ 				<span id= "principle_amount"></span></font></label>	<br>	
+					<div class="row">
+					<div class="col-sm-1"></div>
+		
+							<div class="col-sm-10" style="border-top:1px solid #ccc;">	
+							</div>
+							</div><br>
+					<i class="fa fa-circle" style="font-size:15px;color:#203d7f"></i>
+					<label><font color="#626262">Interest paid  
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+					<span id= "interest_amount"></span></font></label>
+					 
+					<div class="row">
+					<div class="col-sm-1"></div>
+		
+							<div class="col-sm-10" style="border-top:1px solid #ccc;">	
+							</div>
+							</div>
+		
+							<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:18px;"><font color="#626262">Total Payable
+				&emsp;&emsp;&emsp;&emsp;&ensp;
+				 
+ 				<span id= "total"></span></font>
+				
+		 
+			 </div>
+			
+			  <div class="col-sm-8" style="padding:80px;">
+			  <div class ="row">
+			  <div class="col-sm-7">
+			  
+			  		<span style="font-size:15px;">Calculate EMI For The Desired Loan Amount</span></div>
+			  		<div class="col-sm-3">
+			  		<div class="input-group">
+			  		
+			  			<p class="ridge" style="background-color:white;  width:150px;height:60px;" id="rcorners1"><br>			
+					<input id="name" type="text" class="text-line" disabled/></p>	
+		
+					<span style="font-size:7px;">Rate of interest may vary as per bank policy </span>				
+			  		</div>
+			  			</div>
+			  				<div class="col-sm-2"><br>
+			  	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+						<button id="click" type="button"><i class="fa fa-pencil" ></i></button>
+						</div>
+			  		
+			  	</div>
+			  	
+						<i class="fa fa-rupee"></i><label>Loan Amount</label><br>
+					<div class="row">
+						<div class="col-sm-7">
+						<div class="ridge" style="background-color:white; width:450px; height:60px;" id="rcorners2">
+						<br>
+				<input type="range" list="tickmarks" min="50000" max="500000" id="loan_amt" style="width:410px; background-color:white;" onchange="show_value(this.value);">
+				
+						<datalist id="tickmarks">
+						<option value="50000" ></option>
+						<option value="100000"></option>
+						<option value="150000"></option>
+						<option value="200000"></option>
+						<option value="250000"></option>
+						<option value="300000" ></option>
+						<option value="350000"></option>
+						<option value="400000"></option>
+						<option value="450000"></option>
+						<option value="500000"></option>		
+						</datalist>
+						</div>
+						<span style="font-size:10px;">
+						50,000 &emsp;&emsp;&ensp;&ensp;&ensp;       
+						1,50,000&emsp;&emsp;&ensp;&ensp; &ensp;&ensp;     
+						2,50,000 &emsp;&emsp;&ensp; &ensp;&ensp; &ensp;    
+						3,50,000 &emsp;&emsp;&ensp;  &ensp; &ensp;  
+						4,50,000</span>
+						<span style="font-size:10px;">
+						&emsp;&emsp;&ensp;&ensp;   
+						100,000 &emsp;&emsp;&ensp;&nbsp;&ensp;&ensp;&ensp;    
+						200,000 &emsp;&emsp;&ensp;&nbsp; &nbsp;&ensp;&ensp;    
+						300,000&emsp;&emsp;&ensp; &nbsp; &nbsp;&ensp;&nbsp;   
+						<font color="blue">400,000 &emsp;&nbsp;&ensp;&ensp;&ensp; &nbsp;</font>
+						 500,000</span>
+						</div>
+							<div class="col-sm-3">
+					
+								<p class="ridge" style="background-color:#b6cdff;  width:150px;height:60px;"id="rcorners3"><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;
+				<font color="#7683a7"><span style="font-size:20px;" id="loan_amount"></span></font></p>	
+				
+							</div>
+								<div class="col-sm-1"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-pencil" ></i>
+						</div>
+		     	</div>
+		     <br>
+				
+				<i class="fa fa-link"></i> <label>Tenure</label>(year)<br>
+						<div class="row">
+						<div class="col-sm-7">
+						<div class="ridge" style="background-color:white; width:450px; height:60px;"id="rcorners2">
+						<br>
+				<input type="range" list="tickmarks1" min="1" max="15" id="tenure_period" style="width:410px; background-color:white;" onchange="update_value(this.value);">
+
+						<datalist id="tickmarks1">
+						<option value="1"></option>
+						<option value="2"></option>
+						<option value="3"></option>
+						<option value="4"></option>
+						<option value="5"></option>
+						<option value="6"></option>
+						<option value="7"></option>
+						<option value="8"></option>
+						<option value="9"></option>
+						<option value="10"></option>
+						<option value="11"></option>
+						<option value="12"></option>
+						<option value="13"></option>
+						<option value="14"></option>
+						<option value="15"></option>
+						</datalist>
+						</div>
+						<span style="font-size:10px;">
+						1 &emsp; &ensp;&nbsp; 2&emsp;&ensp;&ensp; 3 &emsp; &nbsp;
+						<font color="blue">4 &emsp;&nbsp;&ensp;&nbsp;</font>5</span><span style="font-size:10px;">
+						&emsp;&nbsp;&nbsp; 6 &emsp;&nbsp;&ensp; 7 &emsp;&nbsp;&ensp; 8 &emsp;&nbsp;&ensp;
+						9&emsp;&ensp;10&emsp;&ensp; 11&emsp;&ensp;
+					   12&emsp;&ensp; 13&emsp; 14&emsp; 15</span>
+						</div>
+							<div class="col-sm-3">
+								<p class="ridge" style="background-color:#b6cdff;  width:150px;height:60px;" id="rcorners3"><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#7683a7"><span style="font-size:20px;" id="tenure"></span></font></p>
+						</div>
+						<div class="col-sm-1"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-pencil" ></i>
+						</div>
+		     	</div>
+		    	
+			 <br>
+			 <div class="row">
+			 <div class="col-sm-7"> 
+			 <div class="ridge" style="background-color:white; width:450px; height:60px;" id="rcorners2" >
+					<br>	
+			 <span style="font-size:20px;">	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-rupee"></i>EMI on the above amount<span style="font-size:10px;">(Rs per year)</span></span></div>
+			 </div>
+				<div class="col-sm-3">
+				<div class="input-group">
+				<p class="ridge" style="background-color:#b6cdff;  width:150px;height:60px;" id="rcorners3"><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;<font color="#7683a7"><span style="font-size:20px;" id="EMI_value"></span></font></p>
+						
+		    <span style="font-size:7px;">Enter your preferred EMI to calculate the tenure </span>				
+			  		
+		     </div>	
+		     </div>
+		     	<div class="col-sm-1"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-pencil" ></i>
+						</div>
+		    </div>
+		     <br>	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 <button type="submit" class="btn btn-danger">Proceed</button>
+			
+		 <div class="col-sm-1"></div>
+</div>	
+</div>	<br>
+<br>
+
+		 <div class="row">
+		 <div class="col-sm-1"></div>
+		<div class="col-sm-6">
+	<span style="font-color:#77868b;">Disclaimer:</span><br><br>
+	<i class="fa fa-circle" style="font-size:10px;color:blue"></i>
+	<span style="font-color:#72868f;">Loan eligibility calculated above is provision</span>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<i class="fa fa-circle" style="font-size:10px;color:blue"></i>
+	<span style="font-color:#72868f;">Actual eligibility will be calculate</span>
+	</div>
+	
+	
+	<div class="col-sm-2"></div>
+	</div>
+			
+<br><br>
+
+ <footer>
+<br><br>
+<div class="row">
+	<div class="col-sm-1">
+ 	 <img src="/Assest/logo_mini.jpg" width="80" height="50"> 
+	</div>
+<div class="col-sm-3">
+		<div class="row"><i class="fa fa-phone"></i>&nbsp;&nbsp;+91 7517387239</div>
+			<div class="row">@&nbsp;&nbsp;info@finaleap.com</div>
+				<div class="row">Copyright ©2020 Finaleap. All Rights Reserved</div>
+</div>
+<div class="col-sm-5">
+</div>
+
+  <div class="col-sm-2">
+		<div class="row"> 
+		<div class="col-sm-6">
+		</div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-facebook"></i></div>
+		<div class="col-sm-2"style="font-size:30px;" ><i class="fa fa-twitter"></i></div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-linkedin"></i></div>
+		</div>
+	</div>
+
+</div>
+<br>
+</footer>
+</body>
+</html>
+  

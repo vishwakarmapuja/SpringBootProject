@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Login Page</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="/js/post_customer.js"></script>
+  <script type="text/javascript" src="/js/update_customer.js"></script>
+ <script type="text/javascript" src="/js/enable_text.js"></script>  
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+//alert(window.location.href);
+ </script>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.header {
+  overflow: hidden;
+  background-color:#203d7f;
+  padding: 20px 10px;
+}
+.header1 {
+  overflow: hidden;
+  background-color:#b6cdff;
+  padding: 10px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:black;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.innerdiv
+{
+margin:30px;
+margin-left:90px;
+margin-right:90px;
+shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+footer {
+  text-align:left;
+  padding: 3px;
+  background-color:#203d7f;
+  color: white;
+  
+}
+label{
+text-align:right;
+}
+
+.img1 {
+  -webkit-filter: grayscale(100%);
+  filter:grayscale(100%);
+}
+
+body{
+ background-color:#e9f1f3;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  
+   <img src="/Assest/logo.jpg" width="150" height="50">
+   </div>
+   <div class="header1">
+  <div class="header-left">
+  <a class="nav-link" href="/">Home</a>|
+    <b><a class="nav-link" href="/customers.html">Product</a></b>
+  </div>
+  </div>
+ 
+<div class="container">
+
+	<form id="add_new_customer" action="/product.html">
+	<div class="row">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6"><br>
+				<center><h4>Please Verify Your Mobile Number For the Best Deals!</h4>
+				</center>
+			</div>
+			<div class="col-sm-3">
+			</div>
+    </div>
+    <div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6" >
+				<div  class="innerdiv">
+				 <div>
+					<div class="input-group">
+    		 			 <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+							<input type="text" class="form-control" name="mobileno" id="mobileno"  min="1" max="10" placeholder="Enter mobile no" name="mobileno" pattern="[789][0-9]{9}" required>
+					</div>
+				</div>
+				<div style="text-align:right;">		
+					<button  id="send_otp">Send OTP</button>
+				</div>
+				<br>	
+			   </div> 
+			</div>
+			<div class="col-sm-3">
+			</div>
+			
+     </div>
+   
+    <div class="row">
+           <div class="col-sm-3">
+           </div>
+           <div class="col-sm-6" style="border-top:1px solid #ccc;">
+                 <div  class="innerdiv">
+
+                     <div>           
+   					 <div class="input-group">
+    				  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    			  		<input disabled type="number" class="form-control" id="otp" name="otp" placeholder="Enter OTP" autocomplete="one-time-code" required>
+  			  		</div>
+                   </div>  
+                   	<div style="text-align:right;">	
+					<button disabled type="submit"  id="verify_otp">Verify</button>
+				</div>
+               </div>
+           </div>
+           <div class="col-sm-3">
+           </div>
+    </div>
+   <center>
+   <h6><input type="checkbox" name="remember" required>"I accept Terms and Conditions and consent for any bureau(Equifax/CIBIL) verfication" Refer<font color="blue"> Terms and Conditions </font></h6>
+           </center>   
+         <br>
+         <br>
+       
+  <center> 
+    <button type="submit" class="btn btn-danger disabled" id="btnSubmit">Submit</button></center>
+  </form>
+  </div>
+	<br><br>
+<footer>
+<br><br>
+<div class="row">
+	<div class="col-sm-1">
+	<center>
+ 	 <img src="/Assest/logo_mini.jpg" width="80" height="50"> 
+ 	 </center>
+	</div>
+<div class="col-sm-3">
+<center>
+		<div class="row"><i class='fa fa-phone'></i>&nbsp;&nbsp;+917517387239</div>
+		<div class="row">@&nbsp;&nbsp;info@finaleap.com</div>
+		<div class="row">Copyright ©2020 Finaleap. All Rights Reserved</div>
+</center>
+</div>
+<div class="col-sm-5">
+</div>
+
+  <div class="col-sm-2">
+		<div class="row"> 
+		
+		<div class="col-sm-6">
+		</div>
+	
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-facebook"></i></div>
+		<div class="col-sm-2"style="font-size:30px;" ><i class="fa fa-twitter"></i></div>
+		<div class="col-sm-1" style="font-size:30px;"><i class="fa fa-linkedin"></i></div>
+		
+		</div>
+	</div>
+
+</div>
+<br>
+<br>
+</footer>	
+</body>
+</html>
